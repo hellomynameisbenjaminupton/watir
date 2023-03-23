@@ -21,13 +21,33 @@ Then('The site will be listed') do
 end
 
 Then('The site will be listed - {string}') do |string|
-  if string == 'git'
-    result = @main.include("GitHub: Let's build from here · GitHub")
+  if string == 'google'
+    result = @main.include("Google")
   else
     puts "Do something else"
   end
   raise(StandardError, 'Check search results are working') unless result
-  @main.test
+end
+
+Given('I do something') do
+  puts "some code"
+end
+
+When('I call the Database') do
+  @dee_bee = @main.test[0][1]
+end
+
+
+When('I call the api') do
+  @response = @main.word_api['name']
+end
+
+Then('I get a result - {string}') do |string|
+  if string == 'db'
+    raise(StandardError, "check database for correct data") unless @dee_bee == 'Hello World!'
+  elsif string == 'api'
+    raise(StandardError, "check api for correct data") unless @response == '10 Barrel Brewing Co'
+  end
 end
 
 

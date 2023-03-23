@@ -84,4 +84,9 @@ class Main
     @browser.quit
   end
 
+  ## HTTP Party ###
+  def word_api
+    HTTParty.get("https://api.openbrewerydb.org/breweries/10-barrel-brewing-co-bend-1")
+  end
+
 end
