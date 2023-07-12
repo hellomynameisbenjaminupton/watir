@@ -1,18 +1,11 @@
-
-
-
-Benjamin Upton
-08:19 (0 minutes ago)
-to me
-
-# Watir (Selenium/Cucumber) - Automation Test Suite #
+## Watir (Selenium/Cucumber) - Automation Test Suite
 
 This project is a suite of Automation tests written in Watir. Watir is a Selenium based framework written in Ruby.
 It also includes Cucumber behavior-driven development style features.
 
 ## Install - Ruby! ##
 
-*Introduction*
+**Introduction**
 
 In order to run Ruby code you need to install a Ruby interpreter.
 
@@ -23,7 +16,7 @@ There are different options for properly maintaining a Ruby interpreter, but we 
 Note that RVM is an acceptable (if more complicated) way to maintain a Ruby interpreter if you prefer to use it, but if you choose to use rbenv or chruby, be sure to uninstall RVM completely.
 
 
-### Linux
+## WSL2
 
 **Install git**
 
@@ -58,9 +51,8 @@ rbenv install 3.1.2
 rbenv global 3.1.2
 ruby -v
 ```
---------------------------------------------------------------------------------------------
 
-** Install - Watir **
+**Install - Watir**
 Once you have installed Ruby, installing and using Watir is easy.
 
 First you need to install Bundler
@@ -75,9 +67,7 @@ gem install watir
 bundle install
 ```
 
---------------------------------------------------------------------------------------------
-
-** Install - Chromedriver **
+**Install - Chromedriver**
 * You'll need to install Chromedriver for your tests to run. First download the latest stable build if Chrome if you havent already done so.
 [https://www.google.com/chrome/](https://www.google.com/chrome/)
 * Then go [HERE](https://chromedriver.chromium.org/downloads) to download the corresponding version of Chromedriver.
@@ -93,7 +83,6 @@ You can then check Chromedriver is installed, along with the version (assuring i
 ```shell
 chromedriver -v
 ```
-
 
 ## VS Code Setup
 
@@ -132,4 +121,3 @@ Running tests in Visual Studio Code is a little more complex than RubyMine. Once
 **To run tests from terminal**
 
     $ cucumber example.feature -r step_definitions -r pages --publish-quiet
-
