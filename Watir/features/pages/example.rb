@@ -5,7 +5,7 @@ module Example
   end
 
   def search_box
-    @browser.input(title: 'Search')
+    @browser.textarea(title: 'Search')
   end
 
   def test

@@ -15,17 +15,8 @@ When('I enter {string}') do |string|
   sleep 2
 end
 
-Then('The site will be listed') do
-  result = @main.include('RedBalloon: Enriching Experiences & Gifts')
-  raise(StandardError, 'Check search results are working') unless result
-end
-
 Then('The site will be listed - {string}') do |string|
-  if string == 'google'
-    result = @main.include("Google")
-  else
-    puts "Do something else"
-  end
+  result = @main.include("As a composer, I've ventured into the world of audio alchemy")
   raise(StandardError, 'Check search results are working') unless result
 end
 
