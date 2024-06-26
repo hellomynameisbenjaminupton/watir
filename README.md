@@ -70,11 +70,13 @@ bundle install
 **Install - Chromedriver**
 * You'll need to install Chromedriver for your tests to run. First download the latest stable build if Chrome if you havent already done so.
 [https://www.google.com/chrome/](https://www.google.com/chrome/)
-* Then go [HERE](https://chromedriver.chromium.org/downloads) to download the corresponding version of Chromedriver.
-* Unzip the file youve just donwloaded and in your terminal
-* CD into that folder (ie cd Downloads/chromedriver_linux64), then -
+* Then go [HERE](https://googlechromelabs.github.io/chrome-for-testing/) to download the corresponding version of Chromedriver.
+* Select the latest (or corresponding) chromedriver version, and copy the link, ready for the command below
 
 ```shell
+wget https://storage.googleapis.com/chrome-for-testing-public/{version}/linux64/chromedriver-linux64.zip
+unzip chromedriver-linux64.zip
+cd chromedriver-linux64
 sudo mv chromedriver /usr/bin/chromedriver
 sudo chown root:root /usr/bin/chromedriver
 sudo chmod +x /usr/bin/chromedriver
