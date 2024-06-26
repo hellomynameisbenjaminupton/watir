@@ -11,8 +11,8 @@ require_relative '../Env/database'
 require_relative '../Env/httparty'
 require_relative '../Env/init_watir'
 
-require_relative '../../Watir/ExOz/features/pages/example'
-require_relative '../../Watir/ExOz/features/pages/other'
+require_relative '../../Watir/Brand/features/pages/example'
+require_relative '../../Watir/Brand/features/pages/other'
 
 class Main
   include Example
