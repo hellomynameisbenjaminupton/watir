@@ -2,7 +2,7 @@
 # Create steps from each step within the Gherkin scenario
 # ---------------------
 
-require_relative '../../Env/main'
+require_relative '../../../Env/main'
 
 Given('I am viewing google') do
   @main.go_url

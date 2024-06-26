@@ -11,13 +11,13 @@ require_relative '../Env/database'
 require_relative '../Env/httparty'
 require_relative '../Env/init_watir'
 
-require_relative '../../Watir/features/pages/example'
-
+require_relative '../../Watir/ExOz/features/pages/example'
+require_relative '../../Watir/ExOz/features/pages/other'
 
 class Main
   include Example
   include Database
-
+  include Other
 
   def initialize
     @goo = "www.google.com.au"
