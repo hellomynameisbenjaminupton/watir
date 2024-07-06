@@ -47,8 +47,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
 
-rbenv install 3.1.2
-rbenv global 3.1.2
+rbenv install 3.3.3
+rbenv global 3.3.3
 ruby -v
 ```
 
